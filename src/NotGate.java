@@ -10,11 +10,7 @@ public class NotGate {
 
         boolean gateOutput;
 
-        if (testStatement == false) {
-            gateOutput = true;
-        } else {
-            gateOutput = false;
-        }
+        gateOutput = !testStatement;
         System.out.println("The gate comes out as " + gateOutput);
         statement.close();
     }

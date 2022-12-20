@@ -15,11 +15,7 @@ public class AndGate {
 
         boolean gateOutput;
 
-        if (testStatement && testStatement2 == true) {
-            gateOutput = true;
-        } else {
-            gateOutput = false;
-        }
+        gateOutput = testStatement && testStatement2;
         System.out.println("The gate comes out as " + gateOutput);
         statement.close();
     }
